@@ -1,12 +1,9 @@
-# Rick and Morty Hackathon
+# Rick and Morty Api
 
 ## Description
 This is a web application that allows users to search and filter characters from the Rick and Morty series. It consumes the Rick and Morty API to retrieve character information.
 
-## Tech Stack
-This project uses the following technologies:
-
-### Frontend:
+## Techologies used
 - Angular 18.0.5
 - Tailwind CSS
 
