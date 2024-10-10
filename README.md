@@ -16,13 +16,15 @@ Ensure the following are installed:
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/ezequielgdl/hackathon
-    ```
-   ```bash
+## 📋 Requisitos 
+
+- Node.js y npm instalados en tu sistema.
+- Clone repo
+```bash
 npm install
-    ```
-  ```bash
-  ng serve
-  ```
+```
+```bash
+ng serve
+```
+
+Visit http://localhost:4200/ in your browser to view the app. Search for characters by name.
