@@ -1,27 +1,43 @@
-# RickAndMorty
+# Rick and Morty Hackathon
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.4.
+## Description
+This is a web application that allows users to search and filter characters from the Rick and Morty series. It consumes the Rick and Morty API to retrieve character information.
 
-## Development server
+## Tech Stack
+This project uses the following technologies:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Frontend:
+- Angular 18.0.5
+- Tailwind CSS
 
-## Code scaffolding
+### API:
+- Rick and Morty API (https://rickandmortyapi.com/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Prerequisites
+Make sure you have the following installed before starting:
 
-## Build
+- Node.js (version 18.x or higher)
+- npm (comes with Node.js)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation Instructions
 
-## Running unit tests
+1. Clone the repository:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   ```bash
+   git clone https://github.com/ivanetierra/Rick-and-Morty
+    ```
 
-## Running end-to-end tests
+### 2. Setup:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. **Install dependencies**:<br />
+open new terminal
+   ```bash
+   npm install
+   ```
 
-## Further help
+2. **Run the Angular application:**
+   ```bash
+   ng serve 
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+ 3. Open your browser and visit http://localhost:4200/ to view the app.
