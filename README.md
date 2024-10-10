@@ -16,9 +16,6 @@ Ensure the following are installed:
 
 ## Installation
 
-## 📋 Requisitos 
-
-- Node.js y npm instalados en tu sistema.
 - Clone repo
 ```bash
 npm install
