@@ -1,8 +1,12 @@
-<div class="m-10 sm:m-12 md:m-20">
+<div class="m-10 mt-5 sm:m-12 sm:mt-3 md:m-20 md:mt-5">
   <app-search-bar
     (searchEvent)="searchCharacters($event)"
     class="mb-6"
   ></app-search-bar>
+  <div class="flex items-center mb-6">
+    <h2 class="text-white text-2xl font-bold mr-4">Character List</h2>
+    <div class="flex-grow h-px bg-gray-500"></div>
+  </div>
   <div
     class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10"
   >
