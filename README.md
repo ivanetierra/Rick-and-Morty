@@ -22,7 +22,7 @@ Ensure the following are installed:
     ```
    ```bash
 npm install
-  ```
+    ```
   ```bash
   ng serve
   ```
