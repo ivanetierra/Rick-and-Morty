@@ -1,13 +1,15 @@
-<div class="character-list-container">
+<div class="m-20">
   <div
-    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10"
   >
     @for (character of characters(); track $index) {
     <app-character-card [character]="character"></app-character-card>
     }
   </div>
 
-  <div class="mt-4 text-center flex items-center justify-center space-x-4">
+  <div
+    class="mt-4 text-center flex items-center justify-center space-x-4 mt-10"
+  >
     @if (currentPage() > 1) {
     <button
       class="btn-prev bg-blue-500 text-white px-4 py-2 rounded"

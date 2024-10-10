@@ -1,10 +1,14 @@
-<div class="character-card p-4 bg-gray-800 rounded-lg text-center shadow-lg">
+<div
+  class="h-72 character-card bg-[#1e293b] p-6 rounded-lg text-center shadow-lg transform hover:scale-105 transition-transform duration-200"
+>
   <img
     [src]="character.image"
     alt="{{ character.name }}"
     class="rounded-full mb-4 mx-auto w-24 h-24 object-cover"
   />
-  <h3 class="text-xl font-bold text-white">{{ character.name }}</h3>
-  <p class="text-gray-400">{{ character.species }} - {{ character.status }}</p>
-  <p class="text-gray-500">{{ character.origin.name }}</p>
+  <h3 class="text-2xl font-bold text-white">{{ character.name }}</h3>
+  <p class="text-yellow-400">
+    {{ character.species }} - {{ character.status }}
+  </p>
+  <p class="text-gray-400">{{ character.origin.name }}</p>
 </div>
