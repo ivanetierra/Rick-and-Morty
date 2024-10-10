@@ -1,11 +1,12 @@
 import { Component, OnInit, signal } from '@angular/core';
 import { ApiService } from '../../services/api.service';
 import { CharacterCardComponent } from '../character-card/character-card.component';
+import { SearchBarComponent } from '../search-bar/search-bar.component';
 
 @Component({
   selector: 'app-character-list',
   standalone: true,
-  imports: [CharacterCardComponent],
+  imports: [CharacterCardComponent, SearchBarComponent],
   templateUrl: './character-list.component.html',
   styleUrl: './character-list.component.scss',
 })
@@ -30,7 +31,7 @@ export class CharacterListComponent implements OnInit {
     if (this.currentPage() < this.totalPages()) {
       this.currentPage.update((page) => page + 1);
       this.getCharacters(this.currentPage());
-       window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }
 
@@ -38,7 +39,24 @@ export class CharacterListComponent implements OnInit {
     if (this.currentPage() > 1) {
       this.currentPage.update((page) => page - 1);
       this.getCharacters(this.currentPage());
-       window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+
+  searchCharacters(searchTerm: string): void {
+    if (searchTerm) {
+      this._apiService.searchCharacters(searchTerm).subscribe(
+        (response) => {
+          this.characters.set(response.results); 
+          this.totalPages.set(response.info.pages);
+          this.currentPage.set(1); 
+        },
+        (error) => {
+          console.error('Error searching characters:', error);
+        }
+      );
+    } else {
+      this.getCharacters(); 
     }
   }
 }
